@@ -13,6 +13,7 @@ import { StudentModule } from './modules/student/student.module';
       synchronize: true,
       useUnifiedTopology: true,
       entities: ['dist/db/entities/*{.js, .ts}'],
+      logging: true,
     }),
     GraphQLModule.forRoot<ApolloDriverConfig>({
       driver: ApolloDriver,
